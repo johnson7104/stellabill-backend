@@ -30,18 +30,19 @@
     "provenance": true
   },
   "pnpm": {
-    "onlyBuiltDependencies": ["esbuild"]
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
   },
   "scripts": {
     "generate": "node --experimental-strip-types --no-warnings=ExperimentalWarning scripts/generate.ts",
     "prebuild": "pnpm generate",
-    "build": "tsup",
+    "build": "node init && tsup",
     "pretest": "pnpm generate && pnpm build",
     "test": "vitest run --coverage",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit",
-    "lint": "echo \"lint placeholder (eslint optional)\"",
-    "preinstall": "node dist/setup.js"
+    "lint": "echo \"lint placeholder (eslint optional)\""
   },
   "dependencies": {
     "openapi-fetch": "0.13.5"

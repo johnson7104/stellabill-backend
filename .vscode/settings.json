@@ -8,7 +8,6 @@
   "typescript.tsdk": "node_modules/typescript/lib",
   "debug.openDebug": "neverOpen",
   "problems.autoReveal": true,
-  "terminal.integrated.hideOnStartup": "always",
   "terminal.integrated.defaultProfile.windows": "Command Prompt",
   "terminal.integrated.inheritEnv": false,
   "jestrunner.configPath": "jest.unit.config.cjs",
